@@ -1,0 +1,29 @@
+.map-section{
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map-inner{
+  width: 100%;
+}
+.leaflet-control-container { 
+  position: absolute; 
+  right: 56px; 
+  bottom: 100px; 
+  border-radius: 20px;
+}
+.leaflet-control-zoom-in{
+  background-color: rgb(187, 184, 14) !important;
+  border-radius: 30px;
+  color: white !important;
+}
+.leaflet-control-zoom-out{
+  background-color: rgb(165, 33, 121) !important;
+  border-radius: 30px;
+  color: white !important;
+}

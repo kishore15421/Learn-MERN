@@ -1,8 +1,7 @@
 import legendItems from "../entities/LegendItems";
 // import { features } from "../data/countries.json";
-import * as fea from '../data/state.json';
+import fea from '../data/state.json';
 //    this.setState(features);
-const {features} =  fea;
 class LoadCountryTask {
   setState = null;
 
@@ -12,9 +11,8 @@ class LoadCountryTask {
   };
 
   #processCovidData = (covidCountries) => {
-    console.log(covidCountries)
-    for (let i = 0; i < features.length; i++) {
-      const country = features[i];
+    for (let i = 0; i < fea?.features.length; i++) {
+      const country = fea.features[i];
       const covidCountry = covidCountries.find(
         (covidCountry) => country.properties.NAME_1 === covidCountry.ISO3
       );
@@ -31,7 +29,7 @@ class LoadCountryTask {
       this.#setCountryColor(country);
     }
 
-    this.setState(features);
+    this.setState(fea?.features);
   };
 
   #setCountryColor = (country) => {

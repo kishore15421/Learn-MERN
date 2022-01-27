@@ -12,7 +12,6 @@ const Users = () => {
   const legendItemsReverse = [...legendItems].reverse();
 
   const load = () => {
-    console.log("load");
     const loadCountriesTask = new LoadCountriesTask();
     loadCountriesTask.load((countries) => setCountries(countries));
   };
